@@ -44,12 +44,12 @@ def get_keys():
         print(f"Error getting keys: {e}")
         return []
 
-def add_file(file_name, file_path, algorithm_id):
+def add_file(file_name, file_path, key_id):
     try:
         file_record = {
             "file_name": file_name,
             "file_path": file_path,
-            "algorithm_id": ObjectId(algorithm_id),
+            "cheie_id": ObjectId(key_id),
         }
         result = db["files"].insert_one(file_record)
         return str(result.inserted_id)
