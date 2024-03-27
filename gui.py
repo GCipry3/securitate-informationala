@@ -17,7 +17,7 @@ def process_file(action):
     key = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
     iv = "abcdef9876543210abcdef9876543210"
 
-    alg = algorithm.get().lower().replace('-', '')
+    alg = algorithm.get().lower()
     
     if action == "encrypt":
         encryption.encrypt_file(input_file, output_file, alg, key, iv)

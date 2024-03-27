@@ -2,3 +2,5 @@ venv
 mongosh*
 __pycache__
 .env
+output.enc
+output.dec
